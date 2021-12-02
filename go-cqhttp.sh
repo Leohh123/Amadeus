@@ -1,0 +1,1 @@
+cd /home/amadeus/go-cqhttp && ./go-cqhttp
