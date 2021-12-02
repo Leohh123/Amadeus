@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash amadeus.sh
+ExecStart=/bin/bash /home/amadeus/amadeus.sh
 Restart=on-failure
 RestartPreventExitStatus=23
 

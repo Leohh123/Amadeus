@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash go-cqhttp.sh
+ExecStart=/bin/bash /home/amadeus/go-cqhttp.sh
 Restart=on-failure
 RestartPreventExitStatus=23
 
