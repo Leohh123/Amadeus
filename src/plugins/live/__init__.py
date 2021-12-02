@@ -19,7 +19,7 @@ async def live_push(sta):
             "send_msg", **{"user_id": qq_number, "message": message})
 
 
-@scheduler.scheduled_job("interval", seconds=60, id="live")
+@scheduler.scheduled_job("interval", seconds=plugin_config.live_check_interval, id="live")
 async def live():
     for rid in plugin_config.room_ids:
         if rid not in uid_dict:
