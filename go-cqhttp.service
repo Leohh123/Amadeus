@@ -1,0 +1,12 @@
+[Unit]
+Description=go-cqhttp service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=cd /home/amadeus/go-cqhttp && ./go-cqhttp
+Restart=on-failure
+RestartPreventExitStatus=23
+
+[Install]
+WantedBy=multi-user.target

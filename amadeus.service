@@ -1,0 +1,12 @@
+[Unit]
+Description=Amadeus service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=cd /home/amadeus/ && source ./venv/bin/activate && nb run
+Restart=on-failure
+RestartPreventExitStatus=23
+
+[Install]
+WantedBy=multi-user.target
